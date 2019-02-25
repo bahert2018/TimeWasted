@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace TimeWasted.Web
+namespace TimeWasted.Data
 {
     public class BundleConfig
     {

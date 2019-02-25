@@ -1,0 +1,80 @@
+﻿@model IEnumerable<TimeWasted.Models.MovieListItem>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+@if (TempData.ContainsKey("SaveResult"))
+{
+    <div class="alert alert-success fade in" role="alert">
+        @ViewBag.SaveResult
+        <button type="button" class="close" data-dismiss="alert">
+            <span>&times;</span>
+        </button>
+        @@TempData["SaveResult"]
+    </div>
+}
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.MovieId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.WatchedIt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sequel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.WatchLater)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.WorthIt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreatedUtc)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MovieId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Title)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.WatchedIt)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Sequel)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.WatchLater)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.WorthIt)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CreatedUtc)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.MovieId }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.MovieId }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.MovieId })
+                </td>
+            </tr>
+        }
+
+    </table>

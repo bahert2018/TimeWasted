@@ -8,6 +8,7 @@ using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
+using TimeWasted.Data;
 using TimeWasted.Web.Models;
 
 namespace TimeWasted.Web.Controllers

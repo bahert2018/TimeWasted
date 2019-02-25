@@ -1,0 +1,90 @@
+﻿@model TimeWasted.Models.TimeDetail
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TimeDetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SeasonNumber)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SeasonNumber)
+        </dd>
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EpisodesPerSeason)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EpisodesPerSeason)
+        </dd>
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EpisodeLength)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EpisodeLength)
+        </dd>
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Watchedbefore)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Watchedbefore)
+        </dd>
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WorthIt)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.WorthIt)
+        </dd>
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreatedUtc)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CreatedUtc)
+        </dd>
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ModifiedUtc)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ModifiedUtc)
+        </dd>
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShowId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ShowId)
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ShowId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
