@@ -28,6 +28,9 @@ namespace TimeWasted.Services
                     Sequel = model.Sequel,
                     WatchLater = model.WatchLater,
                     WorthIt = model.WorthIt,
+                    MovieLength = model.MovieLength,
+                    TimeTotal = TimeTotal(model.MovieLength, model.Sequel),
+
                     CreatedUtc = DateTimeOffset.Now
                 };
 
@@ -56,6 +59,7 @@ namespace TimeWasted.Services
                                     WatchedIt = e.WatchedIt,
                                     Sequel = e.Sequel,
                                     WatchLater = e.WatchLater,
+                                    TimeTotal = e.TimeTotal,
                                     WorthIt = e.WorthIt,
                                     CreatedUtc = e.CreatedUtc
                                 }
@@ -82,6 +86,7 @@ namespace TimeWasted.Services
                         WatchLater = entity.WatchLater,
                         WorthIt = entity.WorthIt,
                         Sequel = entity.Sequel,
+                        TimeTotal = entity.TimeTotal,
                         CreatedUtc = entity.CreatedUtc,
                         ModifiedUtc = entity.ModifiedUtc
                     };
@@ -122,6 +127,12 @@ namespace TimeWasted.Services
 
                 return ctx.SaveChanges() == 1;
             }
+        }
+
+        private int TimeTotal(int Sequel, int MovieLength)
+        {
+            int Total = Sequel * MovieLength;
+            return Total;
         }
     }
 }

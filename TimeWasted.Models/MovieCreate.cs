@@ -9,7 +9,7 @@ namespace TimeWasted.Models
 {
     public class MovieCreate
     {
-        [Required]
+        [Key]
         public int MovieId { get; set; }
 
         [Required]
@@ -20,6 +20,12 @@ namespace TimeWasted.Models
 
         [Required]
         public int Sequel { get; set; }
+
+        [Required]
+        public int MovieLength { get; set; }
+
+        [Required]
+        public int TimeTotal { get; set; }
 
         [Required]
         public bool WatchLater { get; set; }

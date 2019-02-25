@@ -21,6 +21,10 @@ namespace TimeWasted.Data
         public bool WatchedIt { get; set; }
 
         [Required]
+        [Display(Name = "How is the movie or one of the movies")]
+        public int MovieLength { get; set; }
+
+        [Required]
         [Display(Name = "How many movies were made in that story line? (Sequals or just the one)")]
         public int Sequel { get; set; }
 
@@ -30,6 +34,10 @@ namespace TimeWasted.Data
          
         [Display(Name = "Was the movie worth it?")]
         public bool WorthIt { get; set; }
+
+        [Required]
+        [Display(Name = "Total Time")]
+        public int TimeTotal { get; set; }
 
         [Required]
         public Guid OwnerId { get; set; }

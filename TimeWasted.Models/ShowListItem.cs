@@ -16,6 +16,7 @@ namespace TimeWasted.Models
         public int EpisodeLength { get; set; }
         public bool WorthIt { get; set; }
         public bool Watchedbefore { get; set; }
+        public int TotalTime { get; set; }
 
 
         [Display(Name = "Created")]

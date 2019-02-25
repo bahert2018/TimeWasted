@@ -15,6 +15,8 @@ namespace TimeWasted.Models
         public int Sequel { get; set; }
         public bool WatchLater { get; set; }
         public bool WorthIt { get; set; }
+        public int MovieLength { get; set; }
+        public int TimeTotal { get; set; }
 
         [Display(Name = "Created")]
         public DateTimeOffset CreatedUtc { get; set; }

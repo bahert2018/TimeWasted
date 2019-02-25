@@ -30,7 +30,7 @@ namespace TimeWasted.Services
                      EpisodesPerSeason = model.EpisodesPerSeason,
                      EpisodeLength = model.EpisodeLength,
                      WorthIt = model.WorthIt,
-                     
+                     TotalTime = TotalTime(model.EpisodesPerSeason, model.EpisodeLength, model.SeasonNumber),
 
                      CreatedUtc = DateTimeOffset.Now
                  };
@@ -38,10 +38,7 @@ namespace TimeWasted.Services
             {
                 // if else to know which table 
 
-                if ()
-                {
-                    Show
-                }
+               
 
                 ctx.Shows.Add(entity);
                 return ctx.SaveChanges() == 1;
@@ -63,9 +60,14 @@ namespace TimeWasted.Services
                                     ShowId = e.ShowId,
                                     Title = e.Title,
                                     CreatedUtc = e.CreatedUtc,
-                                    EpisodeLength= e.EpisodeLength
-                                }
-                        );
+                                    EpisodeLength= e.EpisodeLength,
+                                    EpisodesPerSeason = e.EpisodesPerSeason,
+                                    SeasonNumber = e.SeasonNumber,
+                                    WorthIt = e.WorthIt,
+                                    Watchedbefore = e.Watchedbefore,
+                                    TotalTime = e.TotalTime
+                                    
+                                });
                 return query.ToArray();
             }
         }
@@ -88,6 +90,7 @@ namespace TimeWasted.Services
                       EpisodesPerSeason = entity.EpisodesPerSeason,
                       EpisodeLength = entity.EpisodeLength,
                       WorthIt = entity.WorthIt,
+                      TotalTime = entity.TotalTime,
                       CreatedUtc = entity.CreatedUtc,
                       ModifiedUtc = entity.ModifiedUtc,
                   };
@@ -127,6 +130,14 @@ namespace TimeWasted.Services
 
                 return ctx.SaveChanges() == 1;
             }
+        }
+
+        // calc function 
+
+        private int TotalTime (int tEp, int tEpL, int tSea)
+        {
+            int Total = tEp * tEpL * tSea;
+            return Total;
         }
     }
 }
