@@ -54,21 +54,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\201902132136457_InitialCreate.cs" />
-    <Compile Include="Migrations\201902132136457_InitialCreate.Designer.cs">
-      <DependentUpon>201902132136457_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201902201527051_ShowMigration.cs" />
-    <Compile Include="Migrations\201902201527051_ShowMigration.Designer.cs">
-      <DependentUpon>201902201527051_ShowMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201902212121517_Update-Database.cs" />
-    <Compile Include="Migrations\201902212121517_Update-Database.Designer.cs">
-      <DependentUpon>201902212121517_Update-Database.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201902252051475_New.cs" />
-    <Compile Include="Migrations\201902252051475_New.Designer.cs">
-      <DependentUpon>201902252051475_New.cs</DependentUpon>
+    <Compile Include="Migrations\201902260625499_IHateThisProgram.cs" />
+    <Compile Include="Migrations\201902260625499_IHateThisProgram.Designer.cs">
+      <DependentUpon>201902260625499_IHateThisProgram.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Movies.cs" />
@@ -82,17 +70,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201902132136457_InitialCreate.resx">
-      <DependentUpon>201902132136457_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201902201527051_ShowMigration.resx">
-      <DependentUpon>201902201527051_ShowMigration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201902212121517_Update-Database.resx">
-      <DependentUpon>201902212121517_Update-Database.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201902252051475_New.resx">
-      <DependentUpon>201902252051475_New.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201902260625499_IHateThisProgram.resx">
+      <DependentUpon>201902260625499_IHateThisProgram.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -16,22 +16,25 @@ namespace TimeWasted.Models
         public string Title { get; set; }
 
         [Required]
-        public bool WatchedIt { get; set; }
+        public int MovieLength { get; set; }
 
         [Required]
         public int Sequel { get; set; }
 
         [Required]
-        public int MovieLength { get; set; }
+        public int TimeTotal { get; set; }
 
         [Required]
-        public int TimeTotal { get; set; }
+        public bool WatchedIt { get; set; }
 
         [Required]
         public bool WatchLater { get; set; }
 
         [Required]
         public bool WorthIt { get; set; }
+
+        [Required]
+        public Guid OwnerId { get; set; }
 
         public override string ToString() => Title;
     }

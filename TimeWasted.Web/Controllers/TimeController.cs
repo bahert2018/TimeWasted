@@ -74,7 +74,7 @@ namespace TimeWasted.Web.Controllers
         {
             var service = CreateShowService();
 
-            service.DeleteNote(id);
+            service.DeleteShow(id);
 
             TempData["SaveResult"] = "Your Show was deleted";
 

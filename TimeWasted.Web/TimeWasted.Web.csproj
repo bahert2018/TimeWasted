@@ -256,7 +256,6 @@
     <Content Include="Views\User\Index.cshtml" />
     <Content Include="Views\User\Create.cshtml" />
     <Content Include="Views\Movies\Create.cshtml" />
-    <Content Include="Views\Movies\Details.cshtml" />
     <Content Include="Views\User\Details.cshtml" />
     <Content Include="Views\User\Edit.cshtml" />
     <Content Include="Views\Movies\Edit.cshtml" />
@@ -264,6 +263,7 @@
     <Content Include="Views\Movies\Delete.cshtml" />
     <Content Include="Views\Time\Index.cshtml" />
     <Content Include="Views\Movies\Index.cshtml" />
+    <Content Include="Views\Movies\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

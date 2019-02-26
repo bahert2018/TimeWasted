@@ -10,7 +10,6 @@ namespace TimeWasted.Data.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            ContextKey = "TimeWasted.Data.ApplicationDbContext";
         }
 
         protected override void Seed(TimeWasted.Data.ApplicationDbContext context)

@@ -61,7 +61,6 @@ namespace TimeWasted.Web.Controllers
             var model =
                 new MovieEdit
                 {
-                    MovieId = detail.MovieId,
                     WatchedIt = detail.WatchedIt,
                     WatchLater = detail.WatchLater,
                     WorthIt = detail.WorthIt,

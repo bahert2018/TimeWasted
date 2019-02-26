@@ -7,13 +7,13 @@ namespace TimeWasted.Data.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.0-30225")]
-    public sealed partial class UpdateDatabase : IMigrationMetadata
+    public sealed partial class IHateThisProgram : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(UpdateDatabase));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(IHateThisProgram));
         
         string IMigrationMetadata.Id
         {
-            get { return "201902212121517_Update-Database"; }
+            get { return "201902260625499_IHateThisProgram"; }
         }
         
         string IMigrationMetadata.Source

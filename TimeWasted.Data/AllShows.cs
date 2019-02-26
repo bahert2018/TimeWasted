@@ -40,6 +40,10 @@ namespace TimeWasted.Data
         public string Title { get; set; }
 
         [Required]
+        [Display(Name = "Would you like to add it to a watch later list?")]
+        public bool WatchLater { get; set; }
+
+        [Required]
         [Display(Name = "Total show time.")]
         public int TotalTime { get; set; }
 

@@ -11,8 +11,9 @@ namespace TimeWasted.Models
     {
         public int MovieId { get; set; }
         public string Title { get; set; }
-        public bool WatchedIt { get; set; }
+        public int MovieLength { get; set; }
         public int Sequel { get; set; }
+        public bool WatchedIt { get; set; }
         public bool WatchLater { get; set; }
         public bool WorthIt { get; set; }
         public int TimeTotal { get; set; }

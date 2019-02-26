@@ -27,11 +27,11 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.WatchedIt)
+            @Html.DisplayNameFor(model => model.MovieLength)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.WatchedIt)
+            @Html.DisplayFor(model => model.MovieLength)
         </dd>
 
         <dt>
@@ -40,6 +40,14 @@
 
         <dd>
             @Html.DisplayFor(model => model.Sequel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WatchedIt)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WatchedIt)
         </dd>
 
         <dt>
@@ -56,6 +64,14 @@
 
         <dd>
             @Html.DisplayFor(model => model.WorthIt)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TimeTotal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TimeTotal)
         </dd>
 
         <dt>
@@ -76,8 +92,7 @@
 
     </dl>
 </div>
- </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.MovieId }) |
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
     @Html.ActionLink("Back to List", "Index")
 </p>

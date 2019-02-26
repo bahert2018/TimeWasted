@@ -36,7 +36,7 @@ namespace TimeWasted.Services
                  };
             using (var ctx = new ApplicationDbContext())
             {
-                // if else to know which table 
+                //if()
 
                
 
@@ -117,7 +117,7 @@ namespace TimeWasted.Services
             }
         }
 
-        public bool DeleteNote(int showId)
+        public bool DeleteShow(int showId)
         {
             using (var ctx = new ApplicationDbContext())
             {

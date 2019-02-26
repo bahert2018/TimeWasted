@@ -26,9 +26,10 @@ namespace TimeWasted.Services
                     Title = model.Title,
                     WatchedIt = model.WatchedIt,
                     Sequel = model.Sequel,
-                    WatchLater = model.WatchLater,
+                    //WatchLater = model.WatchLater,
                     WorthIt = model.WorthIt,
                     MovieLength = model.MovieLength,
+                    OwnerId = _movieId,
                     TimeTotal = TimeTotal(model.MovieLength, model.Sequel),
 
                     CreatedUtc = DateTimeOffset.Now
@@ -58,7 +59,7 @@ namespace TimeWasted.Services
                                     Title = e.Title,
                                     WatchedIt = e.WatchedIt,
                                     Sequel = e.Sequel,
-                                    WatchLater = e.WatchLater,
+                                    //WatchLater = e.WatchLater,
                                     TimeTotal = e.TimeTotal,
                                     WorthIt = e.WorthIt,
                                     CreatedUtc = e.CreatedUtc
@@ -82,10 +83,10 @@ namespace TimeWasted.Services
                     {
                         MovieId = entity.MovieId,
                         Title = entity.Title,
-                        WatchedIt = entity.WatchedIt,
-                        WatchLater = entity.WatchLater,
-                        WorthIt = entity.WorthIt,
+                        MovieLength = entity.MovieLength,
                         Sequel = entity.Sequel,
+                        WatchedIt = entity.WatchedIt,
+                        WorthIt = entity.WorthIt,
                         TimeTotal = entity.TimeTotal,
                         CreatedUtc = entity.CreatedUtc,
                         ModifiedUtc = entity.ModifiedUtc
@@ -105,7 +106,7 @@ namespace TimeWasted.Services
                 entity.MovieId = model.MovieId;
                 entity.Title = model.Title;
                 entity.WatchedIt = model.WatchedIt;
-                entity.WatchLater = model.WatchLater;
+                //entity.WatchLater = model.WatchLater;
                 entity.WorthIt = model.WorthIt;
                 entity.Sequel = model.Sequel;
                 entity.ModifiedUtc = DateTimeOffset.UtcNow;

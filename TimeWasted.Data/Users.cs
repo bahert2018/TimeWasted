@@ -21,6 +21,8 @@ namespace TimeWasted.Data
 
             public int ShowId { get; set; }
             public int MovieId { get; set; }
+            public string Title { get; set; }
+            public bool WatchLater { get; set; }
 
 
             public virtual AllShows  AllShows { get; set; }
